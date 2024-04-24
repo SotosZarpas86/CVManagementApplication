@@ -1,0 +1,15 @@
+﻿<EditForm Model="_degree" OnValidSubmit="Save" class="card card-body bg-light mt-1">
+    <DataAnnotationsValidator />
+    <div class="form-group row">
+        <label for="name" class="col-md-2 col-form-label">Name:</label>
+        <div class="col-md-6">
+            <InputText id="name" class="form-control" @bind-Value="_degree.Name" />
+            <ValidationMessage For="@(() => _degree.Name)" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button type="submit" class="btn btn-success">Save</button>
+        </div>
+    </div>
+</EditForm>

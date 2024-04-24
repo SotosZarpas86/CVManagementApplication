@@ -1,0 +1,5 @@
+﻿@page "/candidates"
+@using CVManagementApplication.WebApp.Components
+
+<CandidateForm AvailableDegrees="_availableDegrees" CandidateAdded="HandleNewCandidate" EditCandidate="_existingCandidate"></CandidateForm>
+<CandidateTable AvailableDegrees="_availableDegrees" NewCandidate="_newCandidate" CandidateToEdit="HandleExistingCandidate"></CandidateTable>

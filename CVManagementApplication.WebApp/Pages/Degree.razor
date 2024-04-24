@@ -1,0 +1,6 @@
+﻿@page "/degrees"
+@using CVManagementApplication.WebApp.Components
+
+
+<DegreeForm DegreeAdded="HandleNewDegree" EditDegree="_existingDegree"></DegreeForm>
+<DegreeTable NewDegree="_newDegree" DegreeToEdit="HandleExistingDegree"></DegreeTable>
